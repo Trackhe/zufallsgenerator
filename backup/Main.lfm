@@ -1,0 +1,311 @@
+object MainWindow: TMainWindow
+  Left = 944
+  Height = 893
+  Top = 280
+  Width = 1362
+  Caption = 'Zufallsgenerator'
+  ClientHeight = 893
+  ClientWidth = 1362
+  OnCreate = FormCreate
+  LCLVersion = '3.0.0.3'
+  object noiseSizeMessure: TButton
+    Left = 40
+    Height = 25
+    Top = 237
+    Width = 254
+    Caption = 'Generieren'
+    TabOrder = 0
+    OnClick = noiseSizeMessureClick
+  end
+  object Label1: TLabel
+    Left = 472
+    Height = 32
+    Top = 24
+    Width = 295
+    Caption = 'Zufallszahlengeneratoren'
+    Font.Height = -27
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 112
+    Height = 28
+    Top = 96
+    Width = 368
+    Caption = 'Generatoren für echte Zufallszahlen'
+    Font.Height = -24
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 760
+    Height = 28
+    Top = 96
+    Width = 378
+    Caption = 'Generatoren für Pseudozufallszahlen'
+    Font.Height = -24
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 40
+    Height = 24
+    Top = 168
+    Width = 242
+    Caption = 'Physikalische Generatoren'
+    Font.Height = -21
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 400
+    Height = 24
+    Top = 168
+    Width = 130
+    Caption = 'Tabellenwerke'
+    Font.Height = -21
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 664
+    Height = 24
+    Top = 168
+    Width = 209
+    Caption = 'Kongruenzgeneratoren'
+    Font.Height = -21
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 968
+    Height = 24
+    Top = 168
+    Width = 361
+    Caption = 'Linear rückgekoppeltes Schieberegister'
+    Font.Height = -21
+    ParentFont = False
+  end
+  object Button2: TButton
+    Left = 40
+    Height = 20
+    Top = 576
+    Width = 107
+    Caption = 'Start'
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+  object Button4: TButton
+    Left = 328
+    Height = 25
+    Top = 237
+    Width = 296
+    Caption = 'Rand Corporation'
+    Enabled = False
+    TabOrder = 2
+  end
+  object Button6: TButton
+    Left = 664
+    Height = 25
+    Top = 216
+    Width = 86
+    Caption = 'linear'
+    Enabled = False
+    TabOrder = 3
+  end
+  object Button7: TButton
+    Left = 664
+    Height = 20
+    Top = 328
+    Width = 86
+    Caption = 'nichtlinear'
+    Enabled = False
+    TabOrder = 4
+  end
+  object Button8: TButton
+    Left = 692
+    Height = 20
+    Top = 256
+    Width = 132
+    Caption = 'gemischt linear'
+    Enabled = False
+    TabOrder = 5
+  end
+  object Button9: TButton
+    Left = 692
+    Height = 20
+    Top = 288
+    Width = 132
+    Caption = 'multiplikativ'
+    Enabled = False
+    TabOrder = 6
+  end
+  object Button10: TButton
+    Left = 692
+    Height = 20
+    Top = 368
+    Width = 132
+    Caption = 'x² mod n'
+    Enabled = False
+    TabOrder = 7
+  end
+  object Button11: TButton
+    Left = 692
+    Height = 20
+    Top = 400
+    Width = 132
+    Caption = 'mehrfach rekursiv'
+    Enabled = False
+    TabOrder = 8
+  end
+  object Button12: TButton
+    Left = 1096
+    Height = 25
+    Top = 216
+    Width = 99
+    Caption = 'allgemein'
+    Enabled = False
+    TabOrder = 9
+  end
+  object Button13: TButton
+    Left = 1096
+    Height = 25
+    Top = 251
+    Width = 99
+    Caption = 'binär'
+    Enabled = False
+    TabOrder = 10
+  end
+  object Button14: TButton
+    Left = 1096
+    Height = 20
+    Top = 288
+    Width = 99
+    Caption = 'dual (Galois)'
+    Enabled = False
+    TabOrder = 11
+  end
+  object ButtonTest: TButton
+    Left = 24
+    Height = 25
+    Top = 24
+    Width = 96
+    Caption = 'ButtonTest'
+    TabOrder = 12
+    Visible = False
+    OnClick = ButtonTestClick
+  end
+  object StaticText1: TStaticText
+    Left = 40
+    Height = 173
+    Top = 335
+    Width = 254
+    Caption = 'description'
+    TabOrder = 13
+  end
+  object Edit1: TEdit
+    Left = 81
+    Height = 22
+    Top = 293
+    Width = 213
+    Alignment = taRightJustify
+    NumbersOnly = True
+    ParentBidiMode = False
+    TabOrder = 14
+    Text = '56489'
+    OnChange = Edit1Change
+  end
+  object Label8: TLabel
+    Left = 40
+    Height = 16
+    Top = 271
+    Width = 160
+    Caption = 'Simulation via PerlinNoise:'
+  end
+  object Label9: TLabel
+    Left = 40
+    Height = 16
+    Top = 295
+    Width = 35
+    Caption = 'Seed:'
+    OnClick = Label9Click
+  end
+  object Label10: TLabel
+    Left = 40
+    Height = 16
+    Top = 216
+    Width = 157
+    Caption = 'Rauschgrößenmessung:'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label11: TLabel
+    Left = 40
+    Height = 16
+    Top = 547
+    Width = 183
+    Caption = 'Laufzähler mit Stopereignis:'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label12: TLabel
+    Left = 216
+    Height = 16
+    Top = 576
+    Width = 95
+    Alignment = taRightJustify
+    Anchors = [akTop, akRight]
+    Caption = '0 Millisekunden'
+  end
+  object StaticText2: TStaticText
+    Left = 40
+    Height = 215
+    Top = 611
+    Width = 286
+    Caption = 'description'
+    TabOrder = 15
+  end
+  object Label14: TLabel
+    Left = 328
+    Height = 16
+    Top = 216
+    Width = 250
+    Caption = 'Rand Corporation: Nicht implementiert'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object StaticText3: TStaticText
+    Left = 328
+    Height = 189
+    Top = 271
+    Width = 295
+    Caption = 'description'
+    TabOrder = 16
+  end
+  object Label15: TLabel
+    Left = 328
+    Height = 16
+    Top = 484
+    Width = 296
+    Caption = 'Ziffernfolgen transzendenter Zahlen wie e, π :'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object StaticText4: TStaticText
+    Left = 327
+    Height = 366
+    Top = 510
+    Width = 295
+    Caption = 'description'
+    TabOrder = 17
+  end
+  object StaticText5: TStaticText
+    Left = 943
+    Height = 189
+    Top = 631
+    Width = 295
+    Caption = 'description'
+    TabOrder = 18
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 1
+    OnTimer = Timer1Timer
+    Left = 270
+    Top = 533
+  end
+end
