@@ -1,10 +1,10 @@
 object MainWindow: TMainWindow
-  Left = 944
-  Height = 893
-  Top = 280
+  Left = 2276
+  Height = 1067
+  Top = 134
   Width = 1362
   Caption = 'Zufallsgenerator'
-  ClientHeight = 893
+  ClientHeight = 1067
   ClientWidth = 1362
   OnCreate = FormCreate
   LCLVersion = '3.0.0.3'
@@ -63,7 +63,7 @@ object MainWindow: TMainWindow
     ParentFont = False
   end
   object Label6: TLabel
-    Left = 664
+    Left = 700
     Height = 24
     Top = 168
     Width = 209
@@ -89,105 +89,50 @@ object MainWindow: TMainWindow
     TabOrder = 1
     OnClick = Button2Click
   end
-  object Button4: TButton
-    Left = 328
+  object Button8: TButton
+    Left = 656
+    Height = 20
+    Top = 309
+    Width = 295
+    Caption = 'Generieren'
+    TabOrder = 2
+    OnClick = Button8Click
+  end
+  object Button9: TButton
+    Left = 656
+    Height = 20
+    Top = 377
+    Width = 295
+    Caption = 'Generieren'
+    TabOrder = 3
+    OnClick = Button9Click
+  end
+  object Button10: TButton
+    Left = 656
+    Height = 20
+    Top = 603
+    Width = 295
+    Caption = 'Generieren'
+    TabOrder = 4
+    OnClick = Button10Click
+  end
+  object Button11: TButton
+    Left = 656
+    Height = 20
+    Top = 763
+    Width = 295
+    Caption = 'Generieren'
+    TabOrder = 5
+    OnClick = Button11Click
+  end
+  object Button12: TButton
+    Left = 971
     Height = 25
     Top = 237
     Width = 296
-    Caption = 'Rand Corporation'
-    Enabled = False
-    TabOrder = 2
-  end
-  object Button6: TButton
-    Left = 664
-    Height = 25
-    Top = 216
-    Width = 86
-    Caption = 'linear'
-    Enabled = False
-    TabOrder = 3
-  end
-  object Button7: TButton
-    Left = 664
-    Height = 20
-    Top = 328
-    Width = 86
-    Caption = 'nichtlinear'
-    Enabled = False
-    TabOrder = 4
-  end
-  object Button8: TButton
-    Left = 692
-    Height = 20
-    Top = 256
-    Width = 132
-    Caption = 'gemischt linear'
-    Enabled = False
-    TabOrder = 5
-  end
-  object Button9: TButton
-    Left = 692
-    Height = 20
-    Top = 288
-    Width = 132
-    Caption = 'multiplikativ'
-    Enabled = False
+    Caption = 'Generieren'
     TabOrder = 6
-  end
-  object Button10: TButton
-    Left = 692
-    Height = 20
-    Top = 368
-    Width = 132
-    Caption = 'x² mod n'
-    Enabled = False
-    TabOrder = 7
-  end
-  object Button11: TButton
-    Left = 692
-    Height = 20
-    Top = 400
-    Width = 132
-    Caption = 'mehrfach rekursiv'
-    Enabled = False
-    TabOrder = 8
-  end
-  object Button12: TButton
-    Left = 1096
-    Height = 25
-    Top = 216
-    Width = 99
-    Caption = 'allgemein'
-    Enabled = False
-    TabOrder = 9
-  end
-  object Button13: TButton
-    Left = 1096
-    Height = 25
-    Top = 251
-    Width = 99
-    Caption = 'binär'
-    Enabled = False
-    TabOrder = 10
-  end
-  object Button14: TButton
-    Left = 1096
-    Height = 20
-    Top = 288
-    Width = 99
-    Caption = 'dual (Galois)'
-    Enabled = False
-    TabOrder = 11
-  end
-  object ButtonTest: TButton
-    Left = 24
-    Height = 25
-    Top = 24
-    Width = 96
-    Caption = 'ButtonTest'
-    TabOrder = 12
-    Visible = False
-    OnClick = ButtonTestClick
+    OnClick = Button12Click
   end
   object StaticText1: TStaticText
     Left = 40
@@ -195,7 +140,7 @@ object MainWindow: TMainWindow
     Top = 335
     Width = 254
     Caption = 'description'
-    TabOrder = 13
+    TabOrder = 7
   end
   object Edit1: TEdit
     Left = 81
@@ -205,7 +150,7 @@ object MainWindow: TMainWindow
     Alignment = taRightJustify
     NumbersOnly = True
     ParentBidiMode = False
-    TabOrder = 14
+    TabOrder = 8
     Text = '56489'
     OnChange = Edit1Change
   end
@@ -257,29 +202,30 @@ object MainWindow: TMainWindow
     Top = 611
     Width = 286
     Caption = 'description'
-    TabOrder = 15
+    TabOrder = 9
   end
   object Label14: TLabel
     Left = 328
     Height = 16
     Top = 216
-    Width = 250
-    Caption = 'Rand Corporation: Nicht implementiert'
+    Width = 114
+    Caption = 'Rand Corporation'
     Font.Style = [fsBold]
     ParentFont = False
+    OnClick = Label14Click
   end
   object StaticText3: TStaticText
     Left = 328
     Height = 189
-    Top = 271
+    Top = 239
     Width = 295
     Caption = 'description'
-    TabOrder = 16
+    TabOrder = 10
   end
   object Label15: TLabel
     Left = 328
     Height = 16
-    Top = 484
+    Top = 452
     Width = 296
     Caption = 'Ziffernfolgen transzendenter Zahlen wie e, π :'
     Font.Style = [fsBold]
@@ -288,18 +234,194 @@ object MainWindow: TMainWindow
   object StaticText4: TStaticText
     Left = 327
     Height = 366
-    Top = 510
+    Top = 478
     Width = 295
     Caption = 'description'
-    TabOrder = 17
+    TabOrder = 11
   end
   object StaticText5: TStaticText
-    Left = 943
-    Height = 189
-    Top = 631
+    Left = 656
+    Height = 127
+    Top = 406
     Width = 295
     Caption = 'description'
+    TabOrder = 12
+  end
+  object Label16: TLabel
+    Left = 655
+    Height = 16
+    Top = 237
+    Width = 112
+    Caption = 'Gemischt-Linear:'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Edit2: TEdit
+    Left = 712
+    Height = 22
+    Top = 255
+    Width = 239
+    Alignment = taRightJustify
+    NumbersOnly = True
+    ParentBidiMode = False
+    TabOrder = 13
+    Text = '123456789'
+    OnChange = Edit2Change
+  end
+  object Edit3: TEdit
+    Left = 712
+    Height = 22
+    Top = 282
+    Width = 239
+    Alignment = taRightJustify
+    NumbersOnly = True
+    ParentBidiMode = False
+    TabOrder = 14
+    Text = '987654321'
+    OnChange = Edit3Change
+  end
+  object Label13: TLabel
+    Left = 656
+    Height = 16
+    Top = 257
+    Width = 45
+    Caption = 'Seed a:'
+    OnClick = Label9Click
+  end
+  object Label17: TLabel
+    Left = 656
+    Height = 16
+    Top = 282
+    Width = 46
+    Caption = 'Seed b:'
+    OnClick = Label9Click
+  end
+  object Label18: TLabel
+    Left = 656
+    Height = 16
+    Top = 334
+    Width = 84
+    Caption = 'Multiplikativ:'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Edit4: TEdit
+    Left = 712
+    Height = 22
+    Top = 350
+    Width = 239
+    Alignment = taRightJustify
+    NumbersOnly = True
+    ParentBidiMode = False
+    TabOrder = 15
+    Text = '123456789'
+    OnChange = Edit4Change
+  end
+  object Label19: TLabel
+    Left = 656
+    Height = 16
+    Top = 352
+    Width = 45
+    Caption = 'Seed c:'
+    OnClick = Label9Click
+  end
+  object Label20: TLabel
+    Left = 656
+    Height = 16
+    Top = 557
+    Width = 60
+    Caption = 'x² mod n:'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object StaticText6: TStaticText
+    Left = 655
+    Height = 107
+    Top = 633
+    Width = 318
+    Caption = 'description'
+    TabOrder = 16
+  end
+  object Label21: TLabel
+    Left = 656
+    Height = 18
+    Top = 216
+    Width = 54
+    Caption = 'Linear:'
+    Font.Height = -16
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label22: TLabel
+    Left = 655
+    Height = 18
+    Top = 537
+    Width = 90
+    Caption = 'Nichtlinear:'
+    Font.Height = -16
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Edit5: TEdit
+    Left = 712
+    Height = 22
+    Top = 576
+    Width = 241
+    Alignment = taRightJustify
+    NumbersOnly = True
+    ParentBidiMode = False
+    TabOrder = 17
+    Text = '5'
+    OnChange = Edit5Change
+  end
+  object Label23: TLabel
+    Left = 657
+    Height = 16
+    Top = 578
+    Width = 46
+    Caption = 'Seed d:'
+    OnClick = Label9Click
+  end
+  object Label24: TLabel
+    Left = 656
+    Height = 16
+    Top = 744
+    Width = 123
+    Caption = 'mehrfach rekursiv:'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object StaticText7: TStaticText
+    Left = 655
+    Height = 242
+    Top = 786
+    Width = 318
+    Caption = 'description'
     TabOrder = 18
+  end
+  object Label25: TLabel
+    Left = 971
+    Height = 16
+    Top = 216
+    Width = 112
+    Caption = 'Gemischt-Linear:'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object StaticText8: TStaticText
+    Left = 973
+    Height = 366
+    Top = 270
+    Width = 318
+    Caption = 'description'
+    TabOrder = 19
+  end
+  object Label26: TLabel
+    Left = 5
+    Height = 16
+    Top = 1045
+    Width = 342
+    Caption = 'Quelle:  https://users.fmi.uni-jena.de/~hinze/fv-hinze.pdf'
   end
   object Timer1: TTimer
     Enabled = False

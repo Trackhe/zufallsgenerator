@@ -8,7 +8,7 @@
         <Filename Value="zufallsgenerator.lpr"/>
         <IsPartOfProject Value="True"/>
         <CursorPos X="84" Y="13"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="51"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -18,29 +18,29 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="MainUnit"/>
-        <UsageCount Value="27"/>
+        <UsageCount Value="38"/>
       </Unit>
       <Unit>
         <Filename Value="Main.lfm"/>
         <HasResources Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="31"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit>
       <Unit>
         <Filename Value="zufallsgenerator.lps"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="56" Y="18"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
         <DefaultSyntaxHighlighter Value="XML"/>
       </Unit>
       <Unit>
         <Filename Value="PerlinNoiseGen.pas"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="10"/>
         <CursorPos X="17" Y="124"/>
-        <UsageCount Value="15"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -50,9 +50,9 @@
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="83"/>
-        <CursorPos X="48" Y="178"/>
-        <UsageCount Value="15"/>
+        <TopLine Value="182"/>
+        <CursorPos X="55" Y="195"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -61,13 +61,22 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="1974"/>
         <CursorPos Y="2034"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="zufallsgenerator.res"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
         <DefaultSyntaxHighlighter Value="None"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../fpcupdeluxe/lazarus/lcl/interfaces/cocoa/cocoaint.pas"/>
+        <UnitName Value="CocoaInt"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="670"/>
+        <CursorPos Y="730"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit>
     </Units>
     <Debugger>
@@ -76,123 +85,123 @@
     <JumpHistory HistoryIndex="29">
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="44"/>
+        <Caret Line="183" Column="30" TopLine="169"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="120" Column="43" TopLine="32"/>
+        <Caret Line="184" Column="30" TopLine="170"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="68" Column="113" TopLine="39"/>
+        <Caret Line="185" Column="30" TopLine="171"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="69" Column="113" TopLine="40"/>
+        <Caret Line="96" Column="8" TopLine="96"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="71" Column="113" TopLine="41"/>
+        <Caret Line="243" Column="41" TopLine="200"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="72" Column="26" TopLine="47"/>
+        <Caret Line="163" Column="247" TopLine="128"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="166" Column="22" TopLine="57"/>
+        <Caret Line="162" Column="247" TopLine="127"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="175" Column="58" TopLine="64"/>
+        <Caret Line="163" Column="247" TopLine="128"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="169" Column="29" TopLine="66"/>
+        <Caret Line="165" Column="30" TopLine="129"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="178" Column="34" TopLine="67"/>
+        <Caret Line="166" Column="30" TopLine="130"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="177" Column="70" TopLine="69"/>
+        <Caret Line="355" Column="5" TopLine="236"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="179" Column="32" TopLine="71"/>
+        <Caret Line="356" Column="5" TopLine="237"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="177" Column="34" TopLine="71"/>
+        <Caret Line="168" Column="11" TopLine="168"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="141" Column="416" TopLine="72"/>
+        <Caret Line="393" Column="7" TopLine="274"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="142" Column="416" TopLine="73"/>
+        <Caret Line="395" Column="30" TopLine="288"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="141" Column="416" TopLine="72"/>
+        <Caret Line="413" Column="31" TopLine="303"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="215" TopLine="96"/>
+        <Caret Line="430" Column="57" TopLine="318"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="212" Column="15" TopLine="100"/>
+        <Caret Line="429" Column="57" TopLine="317"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="39" Column="78"/>
+        <Caret Line="435" Column="57" TopLine="323"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="20" Column="58"/>
+        <Caret Line="182" Column="3" TopLine="180"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="8" Column="77" TopLine="79"/>
+        <Caret Line="470" TopLine="351"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="139" Column="52" TopLine="80"/>
+        <Caret Line="446" Column="13" TopLine="366"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="98" Column="32" TopLine="76"/>
+        <Caret Line="513" Column="5" TopLine="394"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="104" Column="32" TopLine="77"/>
+        <Caret Line="470" TopLine="412"/>
+      </Position>
+      <Position>
+        <Filename Value="../../fpcupdeluxe/lazarus/lcl/interfaces/cocoa/cocoaint.pas"/>
+        <Caret Line="730" TopLine="670"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="103" Column="32" TopLine="76"/>
+        <Caret Line="182" Column="17" TopLine="436"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="102" Column="32" TopLine="75"/>
+        <Caret Line="197" Column="55" TopLine="184"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="103" Column="32" TopLine="76"/>
+        <Caret Line="196" Column="55" TopLine="183"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="105" Column="32" TopLine="78"/>
+        <Caret Line="195" Column="55" TopLine="182"/>
       </Position>
       <Position>
         <Filename Value="Main.pas"/>
-        <Caret Line="111" Column="37" TopLine="78"/>
-      </Position>
-      <Position>
-        <Filename Value="Main.pas"/>
-        <Caret Line="110" Column="37" TopLine="77"/>
+        <Caret Line="194" Column="55" TopLine="181"/>
       </Position>
     </JumpHistory>
     <RunParams>
